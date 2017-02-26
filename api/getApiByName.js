@@ -23,7 +23,7 @@ module.exports = (req, res) => {
     /* Sending request to backend server for APIs by name */
     // TODO: change from localhost to rapidapi backend server
     request
-        .get("http://localhost:8081/v2/public/getApiByName/" +packageName)
+        .get("https://api.rapidapi.com/v2/public/getApiByName/" +packageName)
         .set('Accept', 'application/json')
         .end((error, result) => {
             if(error || Object.keys(result.body).length == 0){
