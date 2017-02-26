@@ -19,7 +19,7 @@ module.exports = (req, res) => {
     /* Send request to backend server for getting all APIs */
     // TODO: change from localhost to rapidapi backend server
     request
-        .get(`https://api.rapidapi.com/v2/public/all?limit=${limit}&offset=${offset}&sortBy=${sortBy}`)
+        .get(`https://api.rapidapi.xyz/v2/public/all?limit=${limit}&offset=${offset}&sortBy=${sortBy}`)
         .set('Accept', 'application/json')
         .end((error, result) => {
             if(error){
